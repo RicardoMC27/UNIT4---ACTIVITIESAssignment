@@ -5,7 +5,7 @@ do{
     let nombre = prompt("Dime tu nombre");
     for(let i=0; i<nombre.length; i++){
         if(letnom.includes(nombre[i]) == false){
-            alert("ERROR en el nombre")
+            alert("ERROR en el nombre");
             comp_nom = false; } }
 }while(comp_nom == false)
 var mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
