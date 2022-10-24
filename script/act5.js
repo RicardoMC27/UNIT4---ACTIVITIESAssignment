@@ -11,15 +11,11 @@ do{
 var mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var min_password = "abcdefghijklmnopqrstuvwxyz";
 var num_validation_password = "0123456789";
-var may;
-var minus;
-var num;
-var c;
+var may=false;
+var min=false;
+var num=false;
+var c=false;
 do { let contra = prompt("Dime tu contraseña");
-    may = false;
-    min = false;
-    num = false;
-    c = false;
     for(let k=0; k<contra.length; k++){
         if(mayus_password.includes(contra[k]) == true){
             may = true }
