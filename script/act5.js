@@ -6,9 +6,7 @@ do{
     for(let i=0; i<nombre.length; i++){
         if(letnom.includes(nombre[i]) == false){
             alert("ERROR en el nombre")
-            comp_nom = false
-        }
-    }
+            comp_nom = false; } }
 }while(comp_nom == false)
 var mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var min_password = "abcdefghijklmnopqrstuvwxyz";
@@ -24,16 +22,11 @@ do { let contra = prompt("Dime tu contraseña");
     c = false;
     for(let k=0; k<contra.length; k++){
         if(mayus_password.includes(contra[k]) == true){
-            may = true
-        }
+            may = true }
         else if(min_password.includes(contra[k]) == true){
-            min = true
-        }
+            min = true  }
         else if(num_validation_password.includes(contra[k]) == true){
-            num = true
-        }
+            num = true  }
         else{
-            c = true
-        }
-    }
+            c = true  } }
 }while(may==false || min ==false || num==false || c==false)
