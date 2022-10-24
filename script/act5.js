@@ -10,31 +10,31 @@ do{
         }
     }
 }while(comp_nom == false)
-let mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let min_password = "abcdefghijklmnopqrstuvwxyz"
-let num_validation_password = "0123456789"
-let mayus
-let minus
-let num
-let caracter
+let mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let min_password = "abcdefghijklmnopqrstuvwxyz";
+let num_validation_password = "0123456789";
+let mayus;
+let minus;
+let num;
+let caracter;
 do {
-    let contrasenya = prompt("Dime tu contraseña")
-    mayus = false
-    minus = false
-    num = false
-    caracter = false
-    for(let j=0; j<contrasenya.length; j++){
-        if(mayus_password.includes(contrasenya[j]) == true){
+    let contra = prompt("Dime tu contraseña");
+    mayus = false;
+    minus = false;
+    num = false;
+    c = false;
+    for(let k=0; k<contra.length; k++){
+        if(mayus_password.includes(contra[k]) == true){
             mayus = true
         }
-        else if(min_password.includes(contrasenya[j]) == true){
+        else if(min_password.includes(contra[k]) == true){
             minus = true
         }
-        else if(num_validation_password.includes(contrasenya[j]) == true){
+        else if(num_validation_password.includes(contra[k]) == true){
             num = true
         }
         else{
-            caracter = true
+            c = true
         }
     }
-}while(mayus==false || minus==false || num==false || caracter==false)
+}while(mayus==false || minus==false || num==false || c==false)
