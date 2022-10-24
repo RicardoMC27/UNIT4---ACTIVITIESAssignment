@@ -17,8 +17,7 @@ var may;
 var minus;
 var num;
 var c;
-do {
-    let contra = prompt("Dime tu contraseña");
+do { let contra = prompt("Dime tu contraseña");
     may = false;
     min = false;
     num = false;
