@@ -10,25 +10,25 @@ do{
         }
     }
 }while(comp_nom == false)
-let mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let min_password = "abcdefghijklmnopqrstuvwxyz";
-let num_validation_password = "0123456789";
-let mayus;
-let minus;
-let num;
-let caracter;
+var mayus_password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var min_password = "abcdefghijklmnopqrstuvwxyz";
+var num_validation_password = "0123456789";
+var may;
+var minus;
+var num;
+var c;
 do {
     let contra = prompt("Dime tu contraseña");
-    mayus = false;
-    minus = false;
+    may = false;
+    min = false;
     num = false;
     c = false;
     for(let k=0; k<contra.length; k++){
         if(mayus_password.includes(contra[k]) == true){
-            mayus = true
+            may = true
         }
         else if(min_password.includes(contra[k]) == true){
-            minus = true
+            min = true
         }
         else if(num_validation_password.includes(contra[k]) == true){
             num = true
@@ -37,4 +37,4 @@ do {
             c = true
         }
     }
-}while(mayus==false || minus==false || num==false || c==false)
+}while(may==false || min ==false || num==false || c==false)
